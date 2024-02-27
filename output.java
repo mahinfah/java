@@ -1,5 +1,5 @@
 import java.lang.*;
-public class output{
+public class output{   // main function test.javav
 	
 	
 	public int a;
