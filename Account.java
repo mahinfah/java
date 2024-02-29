@@ -1,6 +1,6 @@
 import java.lang.*;
 
-public class Account
+public class Account    // main method is Starts.java
 {
 	private int ano; 
 	private double balance;
