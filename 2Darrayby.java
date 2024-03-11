@@ -1,5 +1,5 @@
 import java.lang.*;
-import java.util.Scanner;
+import java.util.Scanner; // for userinput purpose
  public class array{
 	 
 	 public static void main(String[] args){
