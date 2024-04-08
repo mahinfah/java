@@ -50,12 +50,12 @@ la.setBounds(180,210,300,250);
 		public void actionPerformed(ActionEvent e)
 		{
 			
-			String a=digit1.getText();
-			String b=digit2.getText();
-		if(e.getSource()==sum){
+         String a =digit1.getText();
+         String b =digit2.getText();
 			
-			
-			
+		
+			if(e.getSource()==sum){
+				
 			double sum1 =Double.parseDouble(a)+Double.parseDouble(b);
 			la.setText("sum is :"+sum1);
 			
