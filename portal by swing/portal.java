@@ -1,4 +1,3 @@
-
 import java.lang.*;
 import javax.swing.*;
 import java.awt.*;
@@ -26,15 +25,18 @@ public class portal implements ActionListener
 		 f=new JFrame("Index");
 		 c = f.getContentPane();
           pass = new JPasswordField();
+	  
 		  ImageIcon logo = new ImageIcon("framepic.png");
           f.setIconImage(logo.getImage());
         //  f.setLocationRelativeTo(null);
 		  id = new JTextField();
+		 	 Color color=new Color(51,153,255);
+		//  id.setForeground(color);
 		  // Color color=new Color(255,0,0);  this two line for cng text color
 		   // id.setForeground(color);  
 		 		access = new JTextArea("Can't access your account?");
 		// t.setBackground(new Color(51,204,255));
-		 Color color=new Color(51,153,255);
+	
 		  access.setForeground(color);
 		 
         ImageIcon login = new ImageIcon("hh.png");
@@ -69,7 +71,7 @@ public class portal implements ActionListener
 	
 		// login2.addActionListener(this);
 		 login2.addActionListener(this);
-		 access.addActionListener(this);
+		// access.addActionListener(this);
 	 
 	}
 	
@@ -81,11 +83,11 @@ public class portal implements ActionListener
        
          if(e.getSource()==login2)
 		 {			 
-	    //  if( a=="2"&&b=="1234")
-	     // {
+	    if( a.equals("2")&&b.equals("1234") )
+	      {
           new nextpage();
 		  f.setVisible(false);
-		 // }
+		  }
 		//  else
 		//  {
 		///	  System.out.println("Wrong pass");
