@@ -1,30 +1,38 @@
+import javax.swing.*;
 
-import javax.swing.*; 
-import java.awt.*; 
-public class firstswingexample {  
-    firstswingexample(){
+import java.awt.*;
 
-JFrame f=new JFrame("we don't talk about cgpa");//creating instance of JFrame  
+//import java.awt.event.*;
 
-f.getContentPane().setBackground(Color.LIGHT_GRAY);          
-JButton b=new JButton("click");//creating instance of JButton  
-b.setBounds(30,100,100, 40);//x axis, y axis, width, height  
-          JTextField t = new JTextField("Here");
-          t.setBounds(150, 100, 100, 40);
-f.add(b);//adding button in JFrame  
-f.add(t);
-          
-f.setSize(500,500); 
-f.setLayout(null);//using no layout managers  
-f.setVisible(true);//making the frame visible  
-//text.setForeground(Colour.red);
+class BackgroundImageJFrame extends JFrame   // adding background pic
+{
+
+    JButton b1;
+    JLabel l1;
+
+    public BackgroundImageJFrame() {
+
+        setSize(800,800);
+        setVisible(true);
+
+     setLayout(new BorderLayout());
+
+        JLabel background=new JLabel(new ImageIcon("swing/picfortest.png"));
+
+        add(background);
+
+       // background.setLayout(new FlowLayout());
+
+        l1=new JLabel("Here is a button");
+        b1=new JButton("I am a button");
+                                          
+        background.add(l1);                
+        background.add(b1);
+        setSize(801,801); // for refreshing screen
     }
 
-
-
-  public static void main(String[] args) 
-  {  
-new firstswingexample() ;
-
-  }
+    public static void main(String args[]) 
+    {
+        new BackgroundImageJFrame();
+    }
 }
