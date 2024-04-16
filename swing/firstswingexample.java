@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 
 //import java.awt.event.*;
-
+//im
 class BackgroundImageJFrame extends JFrame   // adding background pic
 {
 
