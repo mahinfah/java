@@ -10,7 +10,7 @@ public class Bkash
 		this.name = name;
 	}
 	public void setamount(double amount){
-	this.amount = amount;
+	this.amount = amount;  
 	
 	}
 	public void transfer(Bkash a ,double amount){
