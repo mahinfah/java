@@ -3,7 +3,7 @@ import javax.swing.*;
  import java.awt.*;
 import java.awt.event.*;  
  public class nextpage implements ActionListener
- {
+ {    
 	 private JFrame frame ;
 	 private JTextArea text;
 	 private JLabel head ,ss;
